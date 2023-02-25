@@ -64,10 +64,10 @@ header{
 }
 
 /*=============================== SECTION ===============================*/
-.col-5{
-  margin-top: 232px;
+.col-md-5{
+  margin-top:4%;
 }
-.col-5 h1{
+.col-md-5 h1{
   background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,22 +75,25 @@ header{
   font-family: 'Cinzel';
   font-style: normal;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 46px;
   line-height: 77px;
   letter-spacing: 0.02em;
 }
-.col-5 h1 span{
+.col-md-5 h1 span{
   font-size: 66px;
   font-weight: bold;
   letter-spacing: 20px;
 }
-.col-5 p{
+.col-md-5 p{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 48px;
   color: #EFF3FB;
+}
+.link{
+  margin-left: 2%;
 }
 .link a:nth-child(1){
   width: 170px;
@@ -101,7 +104,7 @@ header{
   background-clip: text;
   font-family: 'Montserrat';
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to right, gold, black) 1;
@@ -126,8 +129,8 @@ header{
   border-image: linear-gradient(to left, gold, black) 0.5;
   transition:all 1s;
 }
-.col-6{
-  margin-top: 70px;
+.ml-5{
+  margin-left: 4%;
 }
 .workss{
   margin-top: 80px;  
@@ -161,12 +164,7 @@ header{
 .frame__img{
   width: 380px;
 }
-.hero__img{
-  width: 750px;
-}
-iframe{
-  height: 100vh;
-}
+
 .iframe3d h2 {
   text-transform: uppercase;
   font-family: 'Montserrat';
@@ -257,7 +255,14 @@ iframe{
   }
 }
 
-@media (max-width:720px){
+@media (max-width:767px){
+  .hertitle{
+    margin-left: 5rem;
+  }
+  .hero_img{
+    width: 70vh;
+  }
+  
   .footer{
   text-align:left;
   padding:5%;
@@ -270,36 +275,38 @@ iframe{
   .footer .row a i{
   margin:0% 3%;
   }
-  }
+}
 
-@media screen and (max-width: 500px) {
+@media (max-width:625px){
+  .col-md-5 h1{
+  font-size: 30px;
+  line-height: 40px;
+  }
+  .col-md-5 h1 span{ 
+  font-size: 32px; 
+  }
+  .col-md-5 p{
+    font-size: 10px;
+    width: 50%;
+    line-height: 20px;
+  }
+  .link a:nth-child(1){
+    width: 7rem;
+    height: 2rem; 
+    font-size: 10px;
+  }
+  .link a:nth-child(2){
+    width: 7rem;
+    height: 2rem;
+    font-size: 10px;
+  }
+  .hero_img{
+    width: 40vh;
+  }
+}
+
+@media screen and (min-width: 480px) {
   
-  .nav-links {
-    top: 0;
-    left: -70%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgba(67, 66, 66, 0);
-    backdrop-filter: blur(8px);
-    width: 100%;
-    height: 100vh;
-    transition: left 1s ease;
-  }
-  .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar .nav-links ul li {
-    margin-bottom: 50px;
-    font-size: 0.7em;
-  }
-  .menu-hamburger {
-    display: block;
-    margin-left: 20%;
-  }
   .logo{
     display: none;
   }
